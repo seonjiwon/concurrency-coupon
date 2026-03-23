@@ -1,0 +1,52 @@
+
+
+         /\      Grafana   /‾‾/                                                                                                                                                                             
+    /\  /  \     |\  __   /  /                                                                                                                                                                              
+   /  \/    \    | |/ /  /   ‾‾\                                                                                                                                                                            
+  /          \   |   (  |  (‾)  |                                                                                                                                                                           
+ / __________ \  |_|\_\  \_____/ 
+
+WARN[0000] There were unknown fields in the options exported in the script  error="json: unknown field \"maxDuration\""
+     execution: local
+        script: ./k6/issue-test.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 100 max VUs, 10m30s max duration (incl. graceful stop):
+              * default: 1000 iterations shared among 100 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+INFO[0000] -- Result --                                  source=console
+INFO[0000] 총 재고:     100                                 source=console
+INFO[0000] 남은 재고:   0                                    source=console
+INFO[0000] 발급 건수:   198                                  source=console
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 1001    2397.001952/s
+    checks_succeeded...: 0.00%   0 out of 1001
+    checks_failed......: 100.00% 1001 out of 1001
+
+    ✗ status is 200
+      ↳  0% — ✓ 0 / ✗ 1000
+    ✗ 테스트 통과!!!
+      ↳  0% — ✓ 0 / ✗ 1
+
+    HTTP
+    http_req_duration..............: avg=38.2ms  min=701µs    med=34.69ms max=195.95ms p(90)=60.99ms p(95)=70.76ms
+      { expected_response:true }...: avg=6.34ms  min=1.69ms   med=6.34ms  max=10.99ms  p(90)=10.06ms p(95)=10.53ms
+    http_req_failed................: 99.80% 1000 out of 1002
+    http_reqs......................: 1002   2399.396559/s
+
+    EXECUTION
+    iteration_duration.............: avg=38.64ms min=832.41µs med=34.97ms max=196.11ms p(90)=61.88ms p(95)=71.83ms
+    iterations.....................: 1000   2394.607344/s
+
+    NETWORK
+    data_received..................: 165 kB 396 kB/s
+    data_sent......................: 158 kB 379 kB/s
+
+
+
+
+running (00m00.4s), 000/100 VUs, 1000 complete and 0 interrupted iterations
+default ✓ [======================================] 100 VUs  00m00.4s/10m0s  1000/1000 shared iters

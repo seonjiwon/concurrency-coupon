@@ -1,0 +1,52 @@
+
+         /\      Grafana   /‾‾/
+    /\  /  \     |\  __   /  /
+   /  \/    \    | |/ /  /   ‾‾\
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/
+
+WARN[0000] There were unknown fields in the options exported in the script  error="json: unknown field \"maxDuration\""
+     execution: local
+        script: k6/issue-test.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 100 max VUs, 10m30s max duration (incl. graceful stop):
+              * default: 1000 iterations shared among 100 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+INFO[0001] -- Result --                                  source=console
+INFO[0001] 총 재고:     100                                 source=console
+INFO[0001] 남은 재고:   0                                    source=console
+INFO[0001] 발급 건수:   100                                  source=console
+
+
+  █ TOTAL RESULTS
+
+    checks_total.......: 1001   705.879034/s
+    checks_succeeded...: 10.08% 101 out of 1001
+    checks_failed......: 89.91% 900 out of 1001
+
+    ✗ status is 200
+      ↳  10% — ✓ 100 / ✗ 900
+    ✓ 테스트 통과!!!
+
+    HTTP
+    http_req_duration..............: avg=122.88ms min=702µs    med=88.64ms  max=553.81ms p(90)=313.82ms p(95)=402.08ms
+      { expected_response:true }...: avg=359.63ms min=8.59ms   med=350.83ms max=553.81ms p(90)=524.4ms  p(95)=542.47ms
+    http_req_failed................: 89.82% 900 out of 1002
+    http_reqs......................: 1002   706.584208/s
+
+    EXECUTION
+    iteration_duration.............: avg=123.29ms min=822.62µs med=88.81ms  max=554.3ms  p(90)=314.19ms p(95)=402.45ms
+    iterations.....................: 1000   705.173861/s
+    vus............................: 100    min=100         max=100
+    vus_max........................: 100    min=100         max=100
+
+    NETWORK
+    data_received..................: 162 kB 114 kB/s
+    data_sent......................: 158 kB 112 kB/s
+
+
+
+
+running (00m01.4s), 000/100 VUs, 1000 complete and 0 interrupted iterations
+default ✓ [======================================] 100 VUs  00m01.3s/10m0s  1000/1000 shared iters
