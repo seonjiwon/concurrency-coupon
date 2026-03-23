@@ -530,3 +530,8 @@
 08:02:23.295 [http-nio-8080-exec-16] [http-nio-8080-exec-16] 현재 재고: 0
 08:02:23.297 [http-nio-8080-exec-34] [http-nio-8080-exec-34] 현재 재고: 0
 08:02:23.298 [http-nio-8080-exec-9] [http-nio-8080-exec-9] 현재 재고: 0
+11:37:34.015 [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+11:37:34.044 [tomcat-shutdown] Graceful shutdown complete
+11:37:34.073 [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+11:37:34.103 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+11:37:34.131 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
