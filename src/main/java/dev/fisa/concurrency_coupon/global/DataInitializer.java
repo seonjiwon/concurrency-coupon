@@ -1,34 +1,86 @@
 package dev.fisa.concurrency_coupon.global;
 
-import dev.fisa.concurrency_coupon.domain.coupon.entity.Coupon;
-import dev.fisa.concurrency_coupon.domain.coupon.repository.CouponRepository;
-import dev.fisa.concurrency_coupon.domain.member.entity.Member;
-import dev.fisa.concurrency_coupon.domain.member.repository.MemberRepository;
+import dev.fisa.concurrency_coupon.domain.performance.entity.Performance;
+import dev.fisa.concurrency_coupon.domain.performance.repository.PerformanceRepository;
+import dev.fisa.concurrency_coupon.domain.seat.entity.Seat;
+import dev.fisa.concurrency_coupon.domain.seat.entity.Section;
+import dev.fisa.concurrency_coupon.domain.seat.repository.SeatRepository;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Component
 @RequiredArgsConstructor
+@Slf4j
 public class DataInitializer {
 
-    private final CouponRepository couponRepository;
-    private final MemberRepository memberRepository;
+    private final PerformanceRepository performanceRepository;
+    private final SeatRepository seatRepository;
 
     @PostConstruct
     public void init() {
-        // 쿠폰 1개
-        couponRepository.save(Coupon.builder()
-                                    .title("선착순 쿠폰")
-                                    .totalStock(100)
-                                    .availableStock(100)
-                                    .build());
+        // 공연 1개
+        Performance performance = performanceRepository.save(
+            Performance.builder()
+                .title("2026 봄 콘서트")
+                .venue("올림픽홀")
+                .performanceDate(LocalDate.of(2026, 5, 1))
+                .performanceTime(LocalTime.of(19, 0))
+                .build()
+        );
 
-        // 멤버 1000명
-        for (int i = 1; i <= 1000; i++) {
-            memberRepository.save(Member.builder()
-                                        .nickname("user" + i)
-                                        .build());
+        // 좌석 100개: VIP 20석 + R 40석 + S 40석
+        int seatNo = 0;
+
+        // VIP 20석 (4행 × 5열)
+        for (int row = 1; row <= 4; row++) {
+            for (int col = 1; col <= 5; col++) {
+                seatRepository.save(
+                    Seat.builder()
+                        .performance(performance)
+                        .section(Section.VIP)
+                        .rowNo(row)
+                        .colNo(col)
+                        .build()
+                );
+                seatNo++;
+            }
         }
+
+        // R석 40석 (4행 × 10열)
+        for (int row = 1; row <= 4; row++) {
+            for (int col = 1; col <= 10; col++) {
+                seatRepository.save(
+                    Seat.builder()
+                        .performance(performance)
+                        .section(Section.R)
+                        .rowNo(row)
+                        .colNo(col)
+                        .build()
+                );
+                seatNo++;
+            }
+        }
+
+        // S석 40석 (4행 × 10열)
+        for (int row = 1; row <= 4; row++) {
+            for (int col = 1; col <= 10; col++) {
+                seatRepository.save(
+                    Seat.builder()
+                        .performance(performance)
+                        .section(Section.S)
+                        .rowNo(row)
+                        .colNo(col)
+                        .build()
+                );
+                seatNo++;
+            }
+        }
+
+        log.info("[DataInitializer] 공연 1개, 좌석 {}개 초기화 완료", seatNo);
     }
 }

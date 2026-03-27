@@ -3,7 +3,7 @@ services:
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: jiwon0126
-      MYSQL_DATABASE: concurrency_coupon
+      MYSQL_DATABASE: concurrency_ticketing
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 5s
@@ -12,7 +12,7 @@ services:
   was1:
     build: .
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/concurrency_coupon?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/concurrency_ticketing?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: jiwon0126
       SPRING_JPA_HIBERNATE_DDL_AUTO: create
@@ -25,7 +25,7 @@ services:
   was2:
     build: .
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/concurrency_coupon?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/concurrency_ticketing?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: jiwon0126
       SPRING_JPA_HIBERNATE_DDL_AUTO: none
