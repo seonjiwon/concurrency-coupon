@@ -10,9 +10,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -27,8 +24,4 @@ public class Performance {
     private String title;
 
     private String venue;
-
-    private LocalDate performanceDate;
-
-    private LocalTime performanceTime;
 }

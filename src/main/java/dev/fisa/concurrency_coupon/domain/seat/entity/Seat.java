@@ -42,10 +42,18 @@ public class Seat {
     @Builder.Default
     private SeatStatus status = SeatStatus.AVAILABLE;
 
-    public void markSold() {
-        if (this.status == SeatStatus.SOLD) {
-            throw new IllegalStateException("이미 예매된 좌석입니다. (좌석 ID: " + this.id + ")");
+    public void hold() {
+        if (this.status != SeatStatus.AVAILABLE) {
+            throw new IllegalStateException("예매할 수 없는 좌석입니다. (좌석 ID: " + this.id + ", 상태: " + this.status + ")");
         }
+        this.status = SeatStatus.HELD;
+    }
+
+    public void sold() {
         this.status = SeatStatus.SOLD;
+    }
+
+    public void release() {
+        this.status = SeatStatus.AVAILABLE;
     }
 }

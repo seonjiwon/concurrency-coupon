@@ -1,0 +1,443 @@
+14:06:13.986 [main] Starting ConcurrencyCouponApplication using Java 17.0.12 with PID 21907 (/Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon/build/classes/java/main started by jiwonseon in /Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon)
+14:06:13.987 [main] The following 1 profile is active: "dev"
+14:06:14.290 [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:06:14.318 [main] Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+14:06:14.527 [main] Tomcat initialized with port 8080 (http)
+14:06:14.534 [main] Starting service [Tomcat]
+14:06:14.534 [main] Starting Servlet engine: [Apache Tomcat/10.1.52]
+14:06:14.556 [main] Initializing Spring embedded WebApplicationContext
+14:06:14.557 [main] Root WebApplicationContext: initialization completed in 550 ms
+14:06:14.628 [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+14:06:14.654 [main] HHH000412: Hibernate ORM core version 6.6.44.Final
+14:06:14.671 [main] HHH000026: Second-level cache disabled
+14:06:14.823 [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+14:06:14.837 [main] HikariPool-1 - Starting...
+14:06:16.084 [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:06:16.537 [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:06:16.544 [main] HikariPool-1 - Starting...
+14:06:17.576 [main] Stopping service [Tomcat]
+14:06:17.582 [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+14:07:13.351 [main] Starting ConcurrencyCouponApplication using Java 17.0.12 with PID 22003 (/Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon/build/classes/java/main started by jiwonseon in /Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon)
+14:07:13.352 [main] The following 1 profile is active: "dev"
+14:07:13.680 [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:07:13.711 [main] Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+14:07:13.927 [main] Tomcat initialized with port 8080 (http)
+14:07:13.936 [main] Starting service [Tomcat]
+14:07:13.937 [main] Starting Servlet engine: [Apache Tomcat/10.1.52]
+14:07:13.962 [main] Initializing Spring embedded WebApplicationContext
+14:07:13.962 [main] Root WebApplicationContext: initialization completed in 592 ms
+14:07:14.048 [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+14:07:14.080 [main] HHH000412: Hibernate ORM core version 6.6.44.Final
+14:07:14.098 [main] HHH000026: Second-level cache disabled
+14:07:14.254 [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+14:07:14.270 [main] HikariPool-1 - Starting...
+14:07:15.478 [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:07:16.041 [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:07:16.048 [main] HikariPool-1 - Starting...
+14:07:17.094 [main] Stopping service [Tomcat]
+14:07:17.102 [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+14:07:57.609 [main] Starting ConcurrencyCouponApplication using Java 17.0.12 with PID 22536 (/Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon/build/classes/java/main started by jiwonseon in /Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon)
+14:07:57.611 [main] The following 1 profile is active: "dev"
+14:07:57.914 [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:07:57.944 [main] Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+14:07:58.144 [main] Tomcat initialized with port 8080 (http)
+14:07:58.151 [main] Starting service [Tomcat]
+14:07:58.152 [main] Starting Servlet engine: [Apache Tomcat/10.1.52]
+14:07:58.174 [main] Initializing Spring embedded WebApplicationContext
+14:07:58.174 [main] Root WebApplicationContext: initialization completed in 544 ms
+14:07:58.246 [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+14:07:58.274 [main] HHH000412: Hibernate ORM core version 6.6.44.Final
+14:07:58.289 [main] HHH000026: Second-level cache disabled
+14:07:58.427 [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+14:07:58.439 [main] HikariPool-1 - Starting...
+14:07:58.585 [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ccfac29
+14:07:58.586 [main] HikariPool-1 - Start completed.
+14:07:58.625 [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:07:59.042 [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:07:59.221 [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:07:59.400 [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+14:07:59.918 [main] [DataInitializer] 공연 1개, 좌석 100개 초기화 완료
+14:08:00.126 [main] Tomcat started on port 8080 (http) with context path '/'
+14:08:00.132 [main] Started ConcurrencyCouponApplication in 2.755 seconds (process running for 2.968)
+14:09:11.613 [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+14:09:11.620 [tomcat-shutdown] Graceful shutdown complete
+14:09:11.624 [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+14:09:11.625 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+14:09:11.628 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+14:09:13.160 [main] Starting ConcurrencyCouponApplication using Java 17.0.12 with PID 23057 (/Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon/build/classes/java/main started by jiwonseon in /Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon)
+14:09:13.161 [main] The following 1 profile is active: "dev"
+14:09:13.478 [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:09:13.508 [main] Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+14:09:13.717 [main] Tomcat initialized with port 8080 (http)
+14:09:13.725 [main] Starting service [Tomcat]
+14:09:13.725 [main] Starting Servlet engine: [Apache Tomcat/10.1.52]
+14:09:13.750 [main] Initializing Spring embedded WebApplicationContext
+14:09:13.750 [main] Root WebApplicationContext: initialization completed in 571 ms
+14:09:13.832 [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+14:09:13.858 [main] HHH000412: Hibernate ORM core version 6.6.44.Final
+14:09:13.874 [main] HHH000026: Second-level cache disabled
+14:09:14.017 [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+14:09:14.030 [main] HikariPool-1 - Starting...
+14:09:14.189 [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@111fe921
+14:09:14.190 [main] HikariPool-1 - Start completed.
+14:09:14.238 [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:09:14.668 [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:09:14.793 [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:09:14.938 [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+14:09:15.475 [main] [DataInitializer] 공연 1개, 좌석 100개 초기화 완료
+14:09:15.671 [main] Tomcat started on port 8080 (http) with context path '/'
+14:09:15.677 [main] Started ConcurrencyCouponApplication in 2.782 seconds (process running for 3.042)
+14:11:52.549 [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:11:52.550 [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+14:11:52.556 [http-nio-8080-exec-1] Completed initialization in 6 ms
+14:11:52.768 [http-nio-8080-exec-72] [http-nio-8080-exec-72] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-75] [http-nio-8080-exec-75] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-50] [http-nio-8080-exec-50] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-68] [http-nio-8080-exec-68] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-77] [http-nio-8080-exec-77] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-27] [http-nio-8080-exec-27] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-52] [http-nio-8080-exec-52] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-95] [http-nio-8080-exec-95] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-99] [http-nio-8080-exec-99] 좌석 1 현재 상태: AVAILABLE
+14:11:52.768 [http-nio-8080-exec-11] [http-nio-8080-exec-11] 좌석 1 현재 상태: AVAILABLE
+14:11:52.819 [http-nio-8080-exec-76] [http-nio-8080-exec-76] 좌석 1 현재 상태: SOLD
+14:11:52.819 [http-nio-8080-exec-40] [http-nio-8080-exec-40] 좌석 1 현재 상태: SOLD
+14:11:52.820 [http-nio-8080-exec-84] [http-nio-8080-exec-84] 좌석 1 현재 상태: SOLD
+14:11:52.820 [http-nio-8080-exec-30] [http-nio-8080-exec-30] 좌석 1 현재 상태: SOLD
+14:11:52.819 [http-nio-8080-exec-39] [http-nio-8080-exec-39] 좌석 1 현재 상태: SOLD
+14:11:52.821 [http-nio-8080-exec-96] [http-nio-8080-exec-96] 좌석 1 현재 상태: SOLD
+14:11:52.821 [http-nio-8080-exec-6] [http-nio-8080-exec-6] 좌석 1 현재 상태: SOLD
+14:11:52.820 [http-nio-8080-exec-17] [http-nio-8080-exec-17] 좌석 1 현재 상태: SOLD
+14:11:52.821 [http-nio-8080-exec-5] [http-nio-8080-exec-5] 좌석 1 현재 상태: SOLD
+14:11:52.821 [http-nio-8080-exec-12] [http-nio-8080-exec-12] 좌석 1 현재 상태: SOLD
+14:11:52.825 [http-nio-8080-exec-47] [http-nio-8080-exec-47] 좌석 1 현재 상태: SOLD
+14:11:52.826 [http-nio-8080-exec-60] [http-nio-8080-exec-60] 좌석 1 현재 상태: SOLD
+14:11:52.827 [http-nio-8080-exec-48] [http-nio-8080-exec-48] 좌석 1 현재 상태: SOLD
+14:11:52.827 [http-nio-8080-exec-79] [http-nio-8080-exec-79] 좌석 1 현재 상태: SOLD
+14:11:52.827 [http-nio-8080-exec-94] [http-nio-8080-exec-94] 좌석 1 현재 상태: SOLD
+14:11:52.827 [http-nio-8080-exec-70] [http-nio-8080-exec-70] 좌석 1 현재 상태: SOLD
+14:11:52.827 [http-nio-8080-exec-37] [http-nio-8080-exec-37] 좌석 1 현재 상태: SOLD
+14:11:52.827 [http-nio-8080-exec-91] [http-nio-8080-exec-91] 좌석 1 현재 상태: SOLD
+14:11:52.827 [http-nio-8080-exec-14] [http-nio-8080-exec-14] 좌석 1 현재 상태: SOLD
+14:11:52.828 [http-nio-8080-exec-89] [http-nio-8080-exec-89] 좌석 1 현재 상태: SOLD
+14:11:52.845 [http-nio-8080-exec-41] [http-nio-8080-exec-41] 좌석 1 현재 상태: SOLD
+14:11:52.846 [http-nio-8080-exec-86] [http-nio-8080-exec-86] 좌석 1 현재 상태: SOLD
+14:11:52.846 [http-nio-8080-exec-69] [http-nio-8080-exec-69] 좌석 1 현재 상태: SOLD
+14:11:52.846 [http-nio-8080-exec-10] [http-nio-8080-exec-10] 좌석 1 현재 상태: SOLD
+14:11:52.846 [http-nio-8080-exec-53] [http-nio-8080-exec-53] 좌석 1 현재 상태: SOLD
+14:11:52.847 [http-nio-8080-exec-13] [http-nio-8080-exec-13] 좌석 1 현재 상태: SOLD
+14:11:52.846 [http-nio-8080-exec-82] [http-nio-8080-exec-82] 좌석 1 현재 상태: SOLD
+14:11:52.847 [http-nio-8080-exec-3] [http-nio-8080-exec-3] 좌석 1 현재 상태: SOLD
+14:11:52.847 [http-nio-8080-exec-15] [http-nio-8080-exec-15] 좌석 1 현재 상태: SOLD
+14:11:52.848 [http-nio-8080-exec-87] [http-nio-8080-exec-87] 좌석 1 현재 상태: SOLD
+14:11:52.852 [http-nio-8080-exec-22] [http-nio-8080-exec-22] 좌석 1 현재 상태: SOLD
+14:11:52.853 [http-nio-8080-exec-46] [http-nio-8080-exec-46] 좌석 1 현재 상태: SOLD
+14:11:52.854 [http-nio-8080-exec-67] [http-nio-8080-exec-67] 좌석 1 현재 상태: SOLD
+14:11:52.854 [http-nio-8080-exec-33] [http-nio-8080-exec-33] 좌석 1 현재 상태: SOLD
+14:11:52.854 [http-nio-8080-exec-93] [http-nio-8080-exec-93] 좌석 1 현재 상태: SOLD
+14:11:52.854 [http-nio-8080-exec-85] [http-nio-8080-exec-85] 좌석 1 현재 상태: SOLD
+14:11:52.854 [http-nio-8080-exec-7] [http-nio-8080-exec-7] 좌석 1 현재 상태: SOLD
+14:11:52.855 [http-nio-8080-exec-78] [http-nio-8080-exec-78] 좌석 1 현재 상태: SOLD
+14:11:52.855 [http-nio-8080-exec-57] [http-nio-8080-exec-57] 좌석 1 현재 상태: SOLD
+14:11:52.855 [http-nio-8080-exec-9] [http-nio-8080-exec-9] 좌석 1 현재 상태: SOLD
+14:11:52.858 [http-nio-8080-exec-83] [http-nio-8080-exec-83] 좌석 1 현재 상태: SOLD
+14:11:52.858 [http-nio-8080-exec-8] [http-nio-8080-exec-8] 좌석 1 현재 상태: SOLD
+14:11:52.859 [http-nio-8080-exec-51] [http-nio-8080-exec-51] 좌석 1 현재 상태: SOLD
+14:11:52.859 [http-nio-8080-exec-80] [http-nio-8080-exec-80] 좌석 1 현재 상태: SOLD
+14:11:52.859 [http-nio-8080-exec-38] [http-nio-8080-exec-38] 좌석 1 현재 상태: SOLD
+14:11:52.859 [http-nio-8080-exec-97] [http-nio-8080-exec-97] 좌석 1 현재 상태: SOLD
+14:11:52.859 [http-nio-8080-exec-25] [http-nio-8080-exec-25] 좌석 1 현재 상태: SOLD
+14:11:52.860 [http-nio-8080-exec-28] [http-nio-8080-exec-28] 좌석 1 현재 상태: SOLD
+14:11:52.860 [http-nio-8080-exec-63] [http-nio-8080-exec-63] 좌석 1 현재 상태: SOLD
+14:11:52.860 [http-nio-8080-exec-88] [http-nio-8080-exec-88] 좌석 1 현재 상태: SOLD
+14:11:52.862 [http-nio-8080-exec-43] [http-nio-8080-exec-43] 좌석 1 현재 상태: SOLD
+14:11:52.862 [http-nio-8080-exec-73] [http-nio-8080-exec-73] 좌석 1 현재 상태: SOLD
+14:11:52.863 [http-nio-8080-exec-20] [http-nio-8080-exec-20] 좌석 1 현재 상태: SOLD
+14:11:52.863 [http-nio-8080-exec-26] [http-nio-8080-exec-26] 좌석 1 현재 상태: SOLD
+14:11:52.863 [http-nio-8080-exec-31] [http-nio-8080-exec-31] 좌석 1 현재 상태: SOLD
+14:11:52.863 [http-nio-8080-exec-32] [http-nio-8080-exec-32] 좌석 1 현재 상태: SOLD
+14:11:52.863 [http-nio-8080-exec-74] [http-nio-8080-exec-74] 좌석 1 현재 상태: SOLD
+14:11:52.863 [http-nio-8080-exec-36] [http-nio-8080-exec-36] 좌석 1 현재 상태: SOLD
+14:11:52.864 [http-nio-8080-exec-2] [http-nio-8080-exec-2] 좌석 1 현재 상태: SOLD
+14:11:52.864 [http-nio-8080-exec-100] [http-nio-8080-exec-100] 좌석 1 현재 상태: SOLD
+14:11:52.867 [http-nio-8080-exec-49] [http-nio-8080-exec-49] 좌석 1 현재 상태: SOLD
+14:11:52.867 [http-nio-8080-exec-23] [http-nio-8080-exec-23] 좌석 1 현재 상태: SOLD
+14:11:52.867 [http-nio-8080-exec-24] [http-nio-8080-exec-24] 좌석 1 현재 상태: SOLD
+14:11:52.867 [http-nio-8080-exec-42] [http-nio-8080-exec-42] 좌석 1 현재 상태: SOLD
+14:11:52.867 [http-nio-8080-exec-92] [http-nio-8080-exec-92] 좌석 1 현재 상태: SOLD
+14:11:52.868 [http-nio-8080-exec-4] [http-nio-8080-exec-4] 좌석 1 현재 상태: SOLD
+14:11:52.868 [http-nio-8080-exec-35] [http-nio-8080-exec-35] 좌석 1 현재 상태: SOLD
+14:11:52.868 [http-nio-8080-exec-34] [http-nio-8080-exec-34] 좌석 1 현재 상태: SOLD
+14:11:52.868 [http-nio-8080-exec-90] [http-nio-8080-exec-90] 좌석 1 현재 상태: SOLD
+14:11:52.868 [http-nio-8080-exec-62] [http-nio-8080-exec-62] 좌석 1 현재 상태: SOLD
+14:11:52.872 [http-nio-8080-exec-55] [http-nio-8080-exec-55] 좌석 1 현재 상태: SOLD
+14:11:52.873 [http-nio-8080-exec-58] [http-nio-8080-exec-58] 좌석 1 현재 상태: SOLD
+14:11:52.873 [http-nio-8080-exec-98] [http-nio-8080-exec-98] 좌석 1 현재 상태: SOLD
+14:11:52.873 [http-nio-8080-exec-29] [http-nio-8080-exec-29] 좌석 1 현재 상태: SOLD
+14:11:52.873 [http-nio-8080-exec-1] [http-nio-8080-exec-1] 좌석 1 현재 상태: SOLD
+14:11:52.872 [http-nio-8080-exec-66] [http-nio-8080-exec-66] 좌석 1 현재 상태: SOLD
+14:11:52.872 [http-nio-8080-exec-61] [http-nio-8080-exec-61] 좌석 1 현재 상태: SOLD
+14:11:52.873 [http-nio-8080-exec-44] [http-nio-8080-exec-44] 좌석 1 현재 상태: SOLD
+14:11:52.874 [http-nio-8080-exec-45] [http-nio-8080-exec-45] 좌석 1 현재 상태: SOLD
+14:11:52.874 [http-nio-8080-exec-71] [http-nio-8080-exec-71] 좌석 1 현재 상태: SOLD
+14:11:52.878 [http-nio-8080-exec-56] [http-nio-8080-exec-56] 좌석 1 현재 상태: SOLD
+14:11:52.878 [http-nio-8080-exec-65] [http-nio-8080-exec-65] 좌석 1 현재 상태: SOLD
+14:11:52.878 [http-nio-8080-exec-81] [http-nio-8080-exec-81] 좌석 1 현재 상태: SOLD
+14:11:52.878 [http-nio-8080-exec-19] [http-nio-8080-exec-19] 좌석 1 현재 상태: SOLD
+14:11:52.878 [http-nio-8080-exec-59] [http-nio-8080-exec-59] 좌석 1 현재 상태: SOLD
+14:11:52.878 [http-nio-8080-exec-21] [http-nio-8080-exec-21] 좌석 1 현재 상태: SOLD
+14:11:52.879 [http-nio-8080-exec-64] [http-nio-8080-exec-64] 좌석 1 현재 상태: SOLD
+14:11:52.879 [http-nio-8080-exec-18] [http-nio-8080-exec-18] 좌석 1 현재 상태: SOLD
+14:11:52.880 [http-nio-8080-exec-54] [http-nio-8080-exec-54] 좌석 1 현재 상태: SOLD
+14:11:52.881 [http-nio-8080-exec-16] [http-nio-8080-exec-16] 좌석 1 현재 상태: SOLD
+14:12:21.975 [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+14:12:21.981 [tomcat-shutdown] Graceful shutdown complete
+14:12:21.986 [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+14:12:21.987 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+14:12:21.989 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+14:12:23.399 [main] Starting ConcurrencyCouponApplication using Java 17.0.12 with PID 23151 (/Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon/build/classes/java/main started by jiwonseon in /Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon)
+14:12:23.400 [main] The following 1 profile is active: "dev"
+14:12:23.696 [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:12:23.725 [main] Finished Spring Data repository scanning in 24 ms. Found 4 JPA repository interfaces.
+14:12:23.932 [main] Tomcat initialized with port 8080 (http)
+14:12:23.938 [main] Starting service [Tomcat]
+14:12:23.938 [main] Starting Servlet engine: [Apache Tomcat/10.1.52]
+14:12:23.965 [main] Initializing Spring embedded WebApplicationContext
+14:12:23.965 [main] Root WebApplicationContext: initialization completed in 548 ms
+14:12:24.044 [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+14:12:24.070 [main] HHH000412: Hibernate ORM core version 6.6.44.Final
+14:12:24.084 [main] HHH000026: Second-level cache disabled
+14:12:24.221 [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+14:12:24.234 [main] HikariPool-1 - Starting...
+14:12:24.381 [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bb50de6
+14:12:24.382 [main] HikariPool-1 - Start completed.
+14:12:24.423 [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+14:12:24.857 [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14:12:24.969 [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:12:25.114 [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+14:12:25.641 [main] [DataInitializer] 공연 1개, 좌석 100개 초기화 완료
+14:12:25.839 [main] Tomcat started on port 8080 (http) with context path '/'
+14:12:25.845 [main] Started ConcurrencyCouponApplication in 2.721 seconds (process running for 2.947)
+14:12:29.842 [http-nio-8080-exec-26] Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:12:29.842 [http-nio-8080-exec-26] Initializing Servlet 'dispatcherServlet'
+14:12:29.843 [http-nio-8080-exec-26] Completed initialization in 1 ms
+14:12:30.011 [http-nio-8080-exec-66] [http-nio-8080-exec-66] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-50] [http-nio-8080-exec-50] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-93] [http-nio-8080-exec-93] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-11] [http-nio-8080-exec-11] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-62] [http-nio-8080-exec-62] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-15] [http-nio-8080-exec-15] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-83] [http-nio-8080-exec-83] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-18] [http-nio-8080-exec-18] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-95] [http-nio-8080-exec-95] 좌석 1 현재 상태: AVAILABLE
+14:12:30.011 [http-nio-8080-exec-14] [http-nio-8080-exec-14] 좌석 1 현재 상태: AVAILABLE
+14:12:30.058 [http-nio-8080-exec-28] [http-nio-8080-exec-28] 좌석 1 현재 상태: SOLD
+14:12:30.060 [http-nio-8080-exec-81] [http-nio-8080-exec-81] 좌석 1 현재 상태: SOLD
+14:12:30.060 [http-nio-8080-exec-16] [http-nio-8080-exec-16] 좌석 1 현재 상태: SOLD
+14:12:30.060 [http-nio-8080-exec-19] [http-nio-8080-exec-19] 좌석 1 현재 상태: SOLD
+14:12:30.060 [http-nio-8080-exec-7] [http-nio-8080-exec-7] 좌석 1 현재 상태: SOLD
+14:12:30.061 [http-nio-8080-exec-87] [http-nio-8080-exec-87] 좌석 1 현재 상태: SOLD
+14:12:30.061 [http-nio-8080-exec-64] [http-nio-8080-exec-64] 좌석 1 현재 상태: SOLD
+14:12:30.061 [http-nio-8080-exec-4] [http-nio-8080-exec-4] 좌석 1 현재 상태: SOLD
+14:12:30.061 [http-nio-8080-exec-10] [http-nio-8080-exec-10] 좌석 1 현재 상태: SOLD
+14:12:30.062 [http-nio-8080-exec-53] [http-nio-8080-exec-53] 좌석 1 현재 상태: SOLD
+14:12:30.066 [http-nio-8080-exec-34] [http-nio-8080-exec-34] 좌석 1 현재 상태: SOLD
+14:12:30.067 [http-nio-8080-exec-82] [http-nio-8080-exec-82] 좌석 1 현재 상태: SOLD
+14:12:30.067 [http-nio-8080-exec-74] [http-nio-8080-exec-74] 좌석 1 현재 상태: SOLD
+14:12:30.067 [http-nio-8080-exec-79] [http-nio-8080-exec-79] 좌석 1 현재 상태: SOLD
+14:12:30.067 [http-nio-8080-exec-9] [http-nio-8080-exec-9] 좌석 1 현재 상태: SOLD
+14:12:30.067 [http-nio-8080-exec-2] [http-nio-8080-exec-2] 좌석 1 현재 상태: SOLD
+14:12:30.068 [http-nio-8080-exec-70] [http-nio-8080-exec-70] 좌석 1 현재 상태: SOLD
+14:12:30.067 [http-nio-8080-exec-58] [http-nio-8080-exec-58] 좌석 1 현재 상태: SOLD
+14:12:30.068 [http-nio-8080-exec-47] [http-nio-8080-exec-47] 좌석 1 현재 상태: SOLD
+14:12:30.069 [http-nio-8080-exec-75] [http-nio-8080-exec-75] 좌석 1 현재 상태: SOLD
+14:12:30.071 [http-nio-8080-exec-89] [http-nio-8080-exec-89] 좌석 1 현재 상태: SOLD
+14:12:30.072 [http-nio-8080-exec-80] [http-nio-8080-exec-80] 좌석 1 현재 상태: SOLD
+14:12:30.071 [http-nio-8080-exec-91] [http-nio-8080-exec-91] 좌석 1 현재 상태: SOLD
+14:12:30.072 [http-nio-8080-exec-97] [http-nio-8080-exec-97] 좌석 1 현재 상태: SOLD
+14:12:30.072 [http-nio-8080-exec-21] [http-nio-8080-exec-21] 좌석 1 현재 상태: SOLD
+14:12:30.074 [http-nio-8080-exec-46] [http-nio-8080-exec-46] 좌석 1 현재 상태: SOLD
+14:12:30.074 [http-nio-8080-exec-44] [http-nio-8080-exec-44] 좌석 1 현재 상태: SOLD
+14:12:30.075 [http-nio-8080-exec-1] [http-nio-8080-exec-1] 좌석 1 현재 상태: SOLD
+14:12:30.076 [http-nio-8080-exec-100] [http-nio-8080-exec-100] 좌석 1 현재 상태: SOLD
+14:12:30.076 [http-nio-8080-exec-5] [http-nio-8080-exec-5] 좌석 1 현재 상태: SOLD
+14:12:30.078 [http-nio-8080-exec-3] [http-nio-8080-exec-3] 좌석 1 현재 상태: SOLD
+14:12:30.079 [http-nio-8080-exec-68] [http-nio-8080-exec-68] 좌석 1 현재 상태: SOLD
+14:12:30.080 [http-nio-8080-exec-96] [http-nio-8080-exec-96] 좌석 1 현재 상태: SOLD
+14:12:30.080 [http-nio-8080-exec-94] [http-nio-8080-exec-94] 좌석 1 현재 상태: SOLD
+14:12:30.082 [http-nio-8080-exec-98] [http-nio-8080-exec-98] 좌석 1 현재 상태: SOLD
+14:12:30.083 [http-nio-8080-exec-37] [http-nio-8080-exec-37] 좌석 1 현재 상태: SOLD
+14:12:30.082 [http-nio-8080-exec-63] [http-nio-8080-exec-63] 좌석 1 현재 상태: SOLD
+14:12:30.084 [http-nio-8080-exec-60] [http-nio-8080-exec-60] 좌석 1 현재 상태: SOLD
+14:12:30.084 [http-nio-8080-exec-90] [http-nio-8080-exec-90] 좌석 1 현재 상태: SOLD
+14:12:30.085 [http-nio-8080-exec-32] [http-nio-8080-exec-32] 좌석 1 현재 상태: SOLD
+14:12:30.087 [http-nio-8080-exec-78] [http-nio-8080-exec-78] 좌석 1 현재 상태: SOLD
+14:12:30.088 [http-nio-8080-exec-24] [http-nio-8080-exec-24] 좌석 1 현재 상태: SOLD
+14:12:30.089 [http-nio-8080-exec-8] [http-nio-8080-exec-8] 좌석 1 현재 상태: SOLD
+14:12:30.089 [http-nio-8080-exec-29] [http-nio-8080-exec-29] 좌석 1 현재 상태: SOLD
+14:12:30.090 [http-nio-8080-exec-72] [http-nio-8080-exec-72] 좌석 1 현재 상태: SOLD
+14:12:30.090 [http-nio-8080-exec-51] [http-nio-8080-exec-51] 좌석 1 현재 상태: SOLD
+14:12:30.090 [http-nio-8080-exec-33] [http-nio-8080-exec-33] 좌석 1 현재 상태: SOLD
+14:12:30.090 [http-nio-8080-exec-13] [http-nio-8080-exec-13] 좌석 1 현재 상태: SOLD
+14:12:30.090 [http-nio-8080-exec-31] [http-nio-8080-exec-31] 좌석 1 현재 상태: SOLD
+14:12:30.091 [http-nio-8080-exec-23] [http-nio-8080-exec-23] 좌석 1 현재 상태: SOLD
+14:12:30.092 [http-nio-8080-exec-69] [http-nio-8080-exec-69] 좌석 1 현재 상태: SOLD
+14:12:30.092 [http-nio-8080-exec-57] [http-nio-8080-exec-57] 좌석 1 현재 상태: SOLD
+14:12:30.093 [http-nio-8080-exec-86] [http-nio-8080-exec-86] 좌석 1 현재 상태: SOLD
+14:12:30.094 [http-nio-8080-exec-77] [http-nio-8080-exec-77] 좌석 1 현재 상태: SOLD
+14:12:30.094 [http-nio-8080-exec-61] [http-nio-8080-exec-61] 좌석 1 현재 상태: SOLD
+14:12:30.094 [http-nio-8080-exec-40] [http-nio-8080-exec-40] 좌석 1 현재 상태: SOLD
+14:12:30.094 [http-nio-8080-exec-17] [http-nio-8080-exec-17] 좌석 1 현재 상태: SOLD
+14:12:30.094 [http-nio-8080-exec-45] [http-nio-8080-exec-45] 좌석 1 현재 상태: SOLD
+14:12:30.094 [http-nio-8080-exec-36] [http-nio-8080-exec-36] 좌석 1 현재 상태: SOLD
+14:12:30.095 [http-nio-8080-exec-71] [http-nio-8080-exec-71] 좌석 1 현재 상태: SOLD
+14:12:30.097 [http-nio-8080-exec-54] [http-nio-8080-exec-54] 좌석 1 현재 상태: SOLD
+14:12:30.100 [http-nio-8080-exec-55] [http-nio-8080-exec-55] 좌석 1 현재 상태: SOLD
+14:12:30.101 [http-nio-8080-exec-73] [http-nio-8080-exec-73] 좌석 1 현재 상태: SOLD
+14:12:30.101 [http-nio-8080-exec-35] [http-nio-8080-exec-35] 좌석 1 현재 상태: SOLD
+14:12:30.102 [http-nio-8080-exec-65] [http-nio-8080-exec-65] 좌석 1 현재 상태: SOLD
+14:12:30.103 [http-nio-8080-exec-76] [http-nio-8080-exec-76] 좌석 1 현재 상태: SOLD
+14:12:30.103 [http-nio-8080-exec-25] [http-nio-8080-exec-25] 좌석 1 현재 상태: SOLD
+14:12:30.103 [http-nio-8080-exec-20] [http-nio-8080-exec-20] 좌석 1 현재 상태: SOLD
+14:12:30.103 [http-nio-8080-exec-38] [http-nio-8080-exec-38] 좌석 1 현재 상태: SOLD
+14:12:30.104 [http-nio-8080-exec-59] [http-nio-8080-exec-59] 좌석 1 현재 상태: SOLD
+14:12:30.106 [http-nio-8080-exec-67] [http-nio-8080-exec-67] 좌석 1 현재 상태: SOLD
+14:12:30.107 [http-nio-8080-exec-88] [http-nio-8080-exec-88] 좌석 1 현재 상태: SOLD
+14:12:30.107 [http-nio-8080-exec-22] [http-nio-8080-exec-22] 좌석 1 현재 상태: SOLD
+14:12:30.107 [http-nio-8080-exec-92] [http-nio-8080-exec-92] 좌석 1 현재 상태: SOLD
+14:12:30.108 [http-nio-8080-exec-48] [http-nio-8080-exec-48] 좌석 1 현재 상태: SOLD
+14:12:30.108 [http-nio-8080-exec-30] [http-nio-8080-exec-30] 좌석 1 현재 상태: SOLD
+14:12:30.109 [http-nio-8080-exec-84] [http-nio-8080-exec-84] 좌석 1 현재 상태: SOLD
+14:12:30.109 [http-nio-8080-exec-41] [http-nio-8080-exec-41] 좌석 1 현재 상태: SOLD
+14:12:30.109 [http-nio-8080-exec-49] [http-nio-8080-exec-49] 좌석 1 현재 상태: SOLD
+14:12:30.110 [http-nio-8080-exec-6] [http-nio-8080-exec-6] 좌석 1 현재 상태: SOLD
+14:12:30.111 [http-nio-8080-exec-43] [http-nio-8080-exec-43] 좌석 1 현재 상태: SOLD
+14:12:30.112 [http-nio-8080-exec-42] [http-nio-8080-exec-42] 좌석 1 현재 상태: SOLD
+14:12:30.113 [http-nio-8080-exec-39] [http-nio-8080-exec-39] 좌석 1 현재 상태: SOLD
+14:12:30.113 [http-nio-8080-exec-56] [http-nio-8080-exec-56] 좌석 1 현재 상태: SOLD
+14:12:30.113 [http-nio-8080-exec-52] [http-nio-8080-exec-52] 좌석 1 현재 상태: SOLD
+14:12:30.114 [http-nio-8080-exec-12] [http-nio-8080-exec-12] 좌석 1 현재 상태: SOLD
+14:12:30.115 [http-nio-8080-exec-99] [http-nio-8080-exec-99] 좌석 1 현재 상태: SOLD
+14:12:30.115 [http-nio-8080-exec-85] [http-nio-8080-exec-85] 좌석 1 현재 상태: SOLD
+14:12:30.115 [http-nio-8080-exec-27] [http-nio-8080-exec-27] 좌석 1 현재 상태: SOLD
+14:12:30.116 [http-nio-8080-exec-26] [http-nio-8080-exec-26] 좌석 1 현재 상태: SOLD
+14:50:44.374 [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+14:50:44.383 [tomcat-shutdown] Graceful shutdown complete
+14:50:44.390 [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+14:50:44.393 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+14:50:44.402 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+15:03:25.472 [main] Starting ConcurrencyCouponApplication using Java 17.0.12 with PID 23669 (/Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon/build/classes/java/main started by jiwonseon in /Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon)
+15:03:25.473 [main] The following 1 profile is active: "dev"
+15:03:25.799 [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:03:25.829 [main] Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+15:03:26.056 [main] Tomcat initialized with port 8080 (http)
+15:03:26.064 [main] Starting service [Tomcat]
+15:03:26.065 [main] Starting Servlet engine: [Apache Tomcat/10.1.52]
+15:03:26.089 [main] Initializing Spring embedded WebApplicationContext
+15:03:26.090 [main] Root WebApplicationContext: initialization completed in 597 ms
+15:03:26.172 [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+15:03:26.202 [main] HHH000412: Hibernate ORM core version 6.6.44.Final
+15:03:26.223 [main] HHH000026: Second-level cache disabled
+15:03:26.382 [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+15:03:26.399 [main] HikariPool-1 - Starting...
+15:03:26.582 [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cd66f6a
+15:03:26.583 [main] HikariPool-1 - Start completed.
+15:03:26.632 [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:03:27.090 [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:03:27.201 [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:03:27.349 [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+15:03:27.785 [main] Tomcat started on port 8080 (http) with context path '/'
+15:03:27.791 [main] Started ConcurrencyCouponApplication in 2.593 seconds (process running for 2.865)
+15:03:27.976 [main] [DataInitializer] 공연 1개, 좌석 100개 초기화 완료
+15:03:38.159 [http-nio-8080-exec-141] Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:03:38.160 [http-nio-8080-exec-141] Initializing Servlet 'dispatcherServlet'
+15:03:38.160 [http-nio-8080-exec-141] Completed initialization in 0 ms
+15:07:23.195 [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+15:07:23.205 [tomcat-shutdown] Graceful shutdown complete
+15:07:23.213 [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+15:07:23.217 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+15:07:23.223 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+15:07:24.837 [main] Starting ConcurrencyCouponApplication using Java 17.0.12 with PID 23767 (/Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon/build/classes/java/main started by jiwonseon in /Users/jiwonseon/Programming/05_FISA/30_Projects/concurrency-coupon)
+15:07:24.838 [main] The following 1 profile is active: "dev"
+15:07:25.154 [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:07:25.185 [main] Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+15:07:25.392 [main] Tomcat initialized with port 8080 (http)
+15:07:25.400 [main] Starting service [Tomcat]
+15:07:25.400 [main] Starting Servlet engine: [Apache Tomcat/10.1.52]
+15:07:25.425 [main] Initializing Spring embedded WebApplicationContext
+15:07:25.425 [main] Root WebApplicationContext: initialization completed in 567 ms
+15:07:25.507 [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+15:07:25.532 [main] HHH000412: Hibernate ORM core version 6.6.44.Final
+15:07:25.549 [main] HHH000026: Second-level cache disabled
+15:07:25.692 [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+15:07:25.704 [main] HikariPool-1 - Starting...
+15:07:25.866 [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ff542a3
+15:07:25.867 [main] HikariPool-1 - Start completed.
+15:07:25.921 [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15:07:26.347 [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+15:07:26.459 [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:07:26.572 [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+15:07:27.010 [main] Tomcat started on port 8080 (http) with context path '/'
+15:07:27.015 [main] Started ConcurrencyCouponApplication in 2.45 seconds (process running for 2.758)
+15:07:27.144 [main] [DataInitializer] 공연 1개, 좌석 100개 초기화 완료
+15:07:31.052 [http-nio-8080-exec-140] Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:07:31.052 [http-nio-8080-exec-140] Initializing Servlet 'dispatcherServlet'
+15:07:31.053 [http-nio-8080-exec-140] Completed initialization in 1 ms
+15:10:31.245 [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+15:10:31.255 [tomcat-shutdown] Graceful shutdown complete
+15:10:31.264 [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+15:10:31.266 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+15:10:31.271 [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

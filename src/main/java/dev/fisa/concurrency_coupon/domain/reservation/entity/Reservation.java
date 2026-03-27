@@ -42,7 +42,7 @@ public class Reservation {
     @Builder.Default
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    public void complete() {
-        this.status = ReservationStatus.COMPLETED;
+    public void sold() {
+        this.status = ReservationStatus.SOLD;
     }
 }

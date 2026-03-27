@@ -13,24 +13,27 @@ import java.util.Optional;
 
 public interface SeatRepository extends JpaRepository<Seat, Long> {
 
-    // v2: 단일 좌석 Pessimistic Lock
+    // Pessimistic Lock: 단일 좌석
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @Query("SELECT s FROM Seat s WHERE s.id = :id")
     Optional<Seat> findByIdForUpdate(@Param("id") Long id);
 
-    // v3/v4: 다중 좌석 Pessimistic Lock (IN절)
+    // Pessimistic Lock: 다중 좌석 (정렬 없음 → 데드락 가능)
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @Query("SELECT s FROM Seat s WHERE s.id IN :ids")
     List<Seat> findAllByIdForUpdate(@Param("ids") List<Long> ids);
 
-    // v3/v4: 다중 좌석 Pessimistic Lock + 정렬 (데드락 방지)
+    // Pessimistic Lock: 다중 좌석 (ID 정렬 → 데드락 방지)
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @Query("SELECT s FROM Seat s WHERE s.id IN :ids ORDER BY s.id ASC")
     List<Seat> findAllByIdForUpdateOrderById(@Param("ids") List<Long> ids);
 
-    // 검증용: 공연별 좌석 상태 조회
+    // 공연별 좌석 목록
     List<Seat> findByPerformanceId(Long performanceId);
 
-    // 검증용: 공연별 SOLD 좌석 수
+    // 공연별 SOLD 좌석 수
     long countByPerformanceIdAndStatus(Long performanceId, SeatStatus status);
+
+    // 공연별 전체 좌석 수
+    long countByPerformanceId(Long performanceId);
 }

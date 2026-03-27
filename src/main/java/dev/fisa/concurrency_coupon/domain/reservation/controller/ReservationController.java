@@ -2,6 +2,7 @@ package dev.fisa.concurrency_coupon.domain.reservation.controller;
 
 import dev.fisa.concurrency_coupon.domain.reservation.dto.ReservationRequest;
 import dev.fisa.concurrency_coupon.domain.reservation.dto.ReservationResponse;
+import dev.fisa.concurrency_coupon.domain.reservation.service.ReservationFacade;
 import dev.fisa.concurrency_coupon.domain.reservation.service.ReservationService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -23,23 +24,18 @@ import java.util.List;
 @RequestMapping("/api")
 public class ReservationController {
 
+    private final ReservationFacade reservationFacade;
     private final ReservationService reservationService;
 
-    /**
-     * 좌석 예매 (핵심 API)
-     */
     @PostMapping("/reservations")
     public ResponseEntity<?> reserve(
         @Valid @RequestBody ReservationRequest request
     ) {
-        ReservationResponse.CreateResponse response = reservationService.reserve(request);
+        ReservationResponse.CreateResponse response = reservationFacade.reserve(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    /**
-     * 좌석 상태 조회 (검증용)
-     */
-    @GetMapping("/seats/{performanceId}")
+    @GetMapping("/performances/{performanceId}/seats")
     public ResponseEntity<?> getSeatStatus(
         @PathVariable Long performanceId
     ) {
@@ -47,12 +43,9 @@ public class ReservationController {
         return ResponseEntity.ok(response);
     }
 
-    /**
-     * 예매 건수 조회 (검증용)
-     */
-    @GetMapping("/reservations/count")
+    @GetMapping("/performances/{performanceId}/stats")
     public ResponseEntity<?> getReservationCount(
-        @org.springframework.web.bind.annotation.RequestParam Long performanceId
+        @PathVariable Long performanceId
     ) {
         ReservationResponse.ReservationCountResponse response = reservationService.getReservationCount(performanceId);
         return ResponseEntity.ok(response);

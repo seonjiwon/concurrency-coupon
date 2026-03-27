@@ -5,36 +5,38 @@ import dev.fisa.concurrency_coupon.domain.performance.repository.PerformanceRepo
 import dev.fisa.concurrency_coupon.domain.seat.entity.Seat;
 import dev.fisa.concurrency_coupon.domain.seat.entity.Section;
 import dev.fisa.concurrency_coupon.domain.seat.repository.SeatRepository;
-import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
-
-import java.time.LocalDate;
-import java.time.LocalTime;
+import org.springframework.transaction.annotation.Transactional;
 
 @Component
 @RequiredArgsConstructor
 @Slf4j
-public class DataInitializer {
+public class DataInitializer implements ApplicationRunner {
 
     private final PerformanceRepository performanceRepository;
     private final SeatRepository seatRepository;
 
-    @PostConstruct
-    public void init() {
-        // 공연 1개
+    @Override
+    @Transactional
+    public void run(ApplicationArguments args) {
+        // 이미 데이터가 존재하면 스킵 (멀티 WAS 환경에서 중복 생성 방지)
+        if (performanceRepository.count() > 0) {
+            log.info("[DataInitializer] 데이터가 이미 존재합니다. 초기화를 건너뜁니다.");
+            return;
+        }
+
         Performance performance = performanceRepository.save(
             Performance.builder()
                 .title("2026 봄 콘서트")
                 .venue("올림픽홀")
-                .performanceDate(LocalDate.of(2026, 5, 1))
-                .performanceTime(LocalTime.of(19, 0))
                 .build()
         );
 
-        // 좌석 100개: VIP 20석 + R 40석 + S 40석
-        int seatNo = 0;
+        int seatCount = 0;
 
         // VIP 20석 (4행 × 5열)
         for (int row = 1; row <= 4; row++) {
@@ -47,7 +49,7 @@ public class DataInitializer {
                         .colNo(col)
                         .build()
                 );
-                seatNo++;
+                seatCount++;
             }
         }
 
@@ -62,7 +64,7 @@ public class DataInitializer {
                         .colNo(col)
                         .build()
                 );
-                seatNo++;
+                seatCount++;
             }
         }
 
@@ -77,10 +79,10 @@ public class DataInitializer {
                         .colNo(col)
                         .build()
                 );
-                seatNo++;
+                seatCount++;
             }
         }
 
-        log.info("[DataInitializer] 공연 1개, 좌석 {}개 초기화 완료", seatNo);
+        log.info("[DataInitializer] 공연 1개, 좌석 {}개 초기화 완료", seatCount);
     }
 }

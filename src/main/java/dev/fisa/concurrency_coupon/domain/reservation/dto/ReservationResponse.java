@@ -29,6 +29,7 @@ public record ReservationResponse() {
     @Builder
     public record ReservationCountResponse(
         Long performanceId,
+        long totalSeatCount,
         long reservationCount,
         long soldSeatCount
     ) {

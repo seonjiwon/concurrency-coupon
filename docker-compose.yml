@@ -4,6 +4,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: jiwon0126
       MYSQL_DATABASE: concurrency_ticketing
+    ports:
+      - "3307:3306"
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 5s
@@ -12,10 +14,12 @@ services:
   was1:
     build: .
     environment:
+      SPRING_PROFILES_ACTIVE: docker
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/concurrency_ticketing?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: jiwon0126
       SPRING_JPA_HIBERNATE_DDL_AUTO: create
+      SERVER_PORT: 8080
     volumes:
       - ./logs/was1:/app/logs
     depends_on:
@@ -25,15 +29,16 @@ services:
   was2:
     build: .
     environment:
+      SPRING_PROFILES_ACTIVE: docker
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/concurrency_ticketing?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: jiwon0126
       SPRING_JPA_HIBERNATE_DDL_AUTO: none
+      SERVER_PORT: 8080
     volumes:
       - ./logs/was2:/app/logs
     depends_on:
-      mysql:
-        condition: service_healthy
+      - was1
 
   nginx:
     image: nginx:alpine
